@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harsh Mishra | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Harsh Mishra </a></div>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+      <p>A passionate developer and designer crafting digital experiences that drive success.</p>
+      <a href="contact.html" class="btn">Let’s Connect</a>
+    </div>
+  </section>
+  
+
+  <!-- About Intro -->
+  <section class="intro">
+    <div class="container">
+      <img src="asstes/harsh.jpg" alt="Harsh Mishra" class="profile-img">
+      <div>
+        <h2>Welcome to My Digital World</h2>
+        <p>I’m a developer with a passion for clean design, innovative business solutions, and building experiences that make an impact. Let's create something amazing together.</p>
+        <a href="about.html" class="btn">More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React / Next.js</div>
+        <div class="skill-card">Python/Java/C</div>
+        <div class="skill-card">Business Strategy</div>
+        <div class="skill-card">SEO & Analytics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+       <a href="https://vaekoninfotech.com/"> <div class="project-card">
+          <img src="asstes/vaekon.jpg" alt="Project 1">
+          <h3>Startup Website</h3>
+          <p>Crafted a sleek, responsive site for a tech startup.
+            Focused on performance, modern design, and user experience.</p>
+        </div></a>
+        <a href="https://harsh3415.github.io/jjipl/"><div class="project-card">
+          <img src="asstes/jjipl.jpg" alt="Project 2">
+          <h3>Industrial Website</h3>
+          <p>Empowering industrial workflows with technology.
+            Responsive, reliable, and ready to scale. </p>    
+            </div></a>
+        <a href="https://vibrantply.in/"><div class="project-card">
+            <img src="asstes/vibrant.jpg" alt="Project 2">
+            <h3>Business Website</h3>
+            <p>Modern business site built for growth.
+                Clean, responsive, and conversion-focused.</p>
+          </div></a>
+          <a href="https://trendsurge.in/"><div class="project-card">
+            <img src="asstes/trendsurge.jpg" alt="Project 2">
+            <h3>Startup Website</h3>
+            <p>Empowering businesses through scalable tech solutions designed for lasting success.</p>
+          </div></a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-card">
+        <p>"Harsh delivered our platform on time with exceptional quality. Highly recommend!"</p>
+        <h4>— Dhiraj Singh, Managing Director of Jewar Jyoti Industries Private Limited</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Harsh Mishra. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const text = "Hello, I'm Harsh Mishra";
+    const typingSpeed = 100;
+    let index = 0;
+  
+    function typeText() {
+      if (index < text.length) {
+        document.getElementById("typed-text").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, typingSpeed);
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", typeText);
+  </script>
+</body>
+</html>
